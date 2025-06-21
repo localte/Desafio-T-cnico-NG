@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `pagamentos` (
+CREATE TABLE IF NOT EXISTS `conta` (
     `numero_conta` int PRIMARY KEY,
-    `saldo` float NOT NULL
+    `saldo` Decimal NOT NULL
 );

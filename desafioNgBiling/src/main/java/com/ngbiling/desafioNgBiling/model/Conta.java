@@ -9,6 +9,6 @@ import lombok.Data;
 public class Conta {
     @Id
     private int numero_conta;
-    private float saldo;
+    private double saldo;
 
 }

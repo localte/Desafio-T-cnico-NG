@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PagamentoService {
-    PagamentoRepository pagamentoRepository;
+    private final PagamentoRepository pagamentoRepository;
 
     @Autowired
     public PagamentoService(PagamentoRepository pagamentoRepository) {

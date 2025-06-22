@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ContaController {
 
-    private ContaService contaService;
+    private final ContaService contaService;
 
     @Autowired
     ContaController(ContaService contaService) {

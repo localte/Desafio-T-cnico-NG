@@ -5,11 +5,9 @@ import com.ngbiling.desafioNgBiling.repository.ContaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
 public class ContaService {
-    private ContaRepository contaRepository;
+    private final ContaRepository contaRepository;
 
     @Autowired
     public ContaService(ContaRepository contaRepository) {

@@ -1,6 +1,5 @@
 package com.ngbiling.desafioNgBiling.controller;
 
-import com.ngbiling.desafioNgBiling.enums.TiposDePagamentosEnum;
 import com.ngbiling.desafioNgBiling.model.Conta;
 import com.ngbiling.desafioNgBiling.model.Transacao;
 import com.ngbiling.desafioNgBiling.service.PagamentoService;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PagamentoController {
 
-    PagamentoService pagamentoService;
+    private final PagamentoService pagamentoService;
 
     @Autowired
     PagamentoController(PagamentoService pagamentoService) {

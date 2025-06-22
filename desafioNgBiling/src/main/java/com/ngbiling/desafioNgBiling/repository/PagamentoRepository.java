@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class PagamentoRepository {
 
-    ContaRepository contaRepository;
+    private final ContaRepository contaRepository;
 
     @Autowired
     PagamentoRepository(ContaRepository contaRepository) {

@@ -11,7 +11,7 @@ import java.util.Optional;
 @Repository
 public class ContaRepository {
 
-    ContaRepositoryInterface contaRepositoryInterface;
+    private final ContaRepositoryInterface contaRepositoryInterface;
 
     @Autowired
     ContaRepository(ContaRepositoryInterface contaRepositoryInterface) {

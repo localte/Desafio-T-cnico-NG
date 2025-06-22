@@ -3,6 +3,7 @@
 <br>Há um diagrama sobre o overview do projeto na pasta "desafioPdf".
 
 <br>-É necessário utilizar a versão JAVA 21 ou superior!
+
 <br>-Para executar a aplicação baixe o executavel "desafioNgBiling-0.0.1-SNAPSHOT.jar" que está no projeto. Apóis baixa-lo clique duas vezes nele para executa-lo. 
 
 <br>Possivelmente não irá aparecer nenhuma mensagem de que o projeto foi iniciado, acesse localhost:8080/ para vericar, caso apareceça 
@@ -34,3 +35,4 @@
 <br>}
 
 <br>-Para acessar o banco de dados use localhost:8080/h2-console (username: sa) não há senha. 
+<br>-O banco de dados precisa estar JDBC URL: jdbc:h2:mem:testdb

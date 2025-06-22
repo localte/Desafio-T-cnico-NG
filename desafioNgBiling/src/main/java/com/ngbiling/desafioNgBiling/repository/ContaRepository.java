@@ -33,4 +33,15 @@ public class ContaRepository {
         Optional<Conta> contaTemp = contaRepositoryInterface.findById(numeroConta);
         return contaTemp.orElse(null);
     }
+
+    public Conta updateContaSaldoByConta(Conta conta, double novoSaldo) {
+        Conta contaNovoSaldo = new Conta();
+        contaNovoSaldo.setNumero_conta(conta.getNumero_conta());
+        contaNovoSaldo.setSaldo(novoSaldo);
+        Conta resContaSave = contaRepositoryInterface.save(contaNovoSaldo);
+        if (resContaSave != null && resContaSave.getNumero_conta() > 0) {
+            return resContaSave;
+        }
+        throw new DataRetrievalFailureException("Não foi possivel salvar a conta.");
+    }
 }

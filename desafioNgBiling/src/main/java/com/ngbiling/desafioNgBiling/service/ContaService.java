@@ -17,6 +17,10 @@ public class ContaService {
     }
 
     public Conta createConta(Conta conta) throws Exception {
+        double saldo = conta.getSaldo();
+        if (saldo < 0) {
+            throw new Exception("Saldo não pode ser negativo");
+        }
         return contaRepository.createConta(conta);
     }
 
